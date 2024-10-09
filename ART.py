@@ -25,7 +25,7 @@ if st.button("Predict"):
 input_data = pd.get_dummies(input_data, columns=['stage'], drop_first=True)
   
     # Make prediction
-    prediction = model.predict(input_data)
+prediction = model.predict(input_data)
 
     # Display the prediction
     if prediction[0] == 1:
