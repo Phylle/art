@@ -28,7 +28,7 @@ input_data = pd.get_dummies(input_data, columns=['stage'], drop_first=True)
 prediction = model.predict(input_data)
 
     # Display the prediction
-    if prediction[0] == 1:
+if prediction[0] == 1:
         st.success("Viral Load is Suppressed (LDL)")
-    else:
+else:
         st.error("Viral Load is Detectable")
